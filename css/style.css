@@ -1,0 +1,137 @@
+/* Konfigurasi kustom untuk Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Warna latar belakang abu-abu terang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Padding untuk responsivitas */
+    box-sizing: border-box; /* Sertakan padding dalam total lebar/tinggi */
+}
+
+.container {
+    background-color: #ffffff; /* Latar belakang putih untuk kontainer */
+    border-radius: 12px; /* Sudut membulat lebih besar */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih menonjol */
+    padding: 32px; /* Padding lebih banyak */
+    width: 100%;
+    max-width: 480px; /* Lebar maksimum yang disesuaikan */
+    text-align: center;
+    box-sizing: border-box; /* Sertakan padding dalam total lebar/tinggi */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Tebal */
+    color: #374151; /* Warna teks abu-abu gelap */
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db; /* Warna border abu-abu */
+    border-radius: 8px; /* Sudut membulat untuk input */
+    font-size: 16px;
+    color: #4b5563; /* Warna teks abu-abu */
+    transition: border-color 0.2s; /* Transisi halus untuk fokus */
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2563eb; /* Warna biru saat fokus */
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); /* Bayangan fokus */
+}
+
+.button {
+    width: 100%;
+    padding: 14px 24px;
+    background-color: #2563eb; /* Warna biru utama */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Sudut membulat */
+    font-size: 18px;
+    font-weight: 700; /* Sangat tebal */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi untuk hover dan klik */
+}
+
+.button:hover {
+    background-color: #1d4ed8; /* Biru lebih gelap saat hover */
+    transform: translateY(-2px); /* Sedikit naik saat hover */
+}
+
+.button:active {
+    transform: translateY(0); /* Kembali ke posisi semula saat klik */
+    background-color: #1e40af; /* Biru lebih gelap saat aktif */
+}
+
+.result-box {
+    background-color: #e0f2fe; /* Latar belakang biru muda */
+    border: 2px dashed #90cdf4; /* Border putus-putus biru */
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 24px;
+    font-size: 3.5rem; /* Angka hasil sangat besar */
+    font-weight: 800; /* Ekstra tebal */
+    color: #1e40af; /* Warna teks biru gelap */
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Sembunyikan jika angka terlalu besar */
+    word-break: break-all; /* Patah kata jika terlalu panjang */
+    /* Animasi untuk menunjukkan perubahan */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.result-box.highlight {
+    background-color: #d1fae5; /* Warna hijau terang saat berubah */
+}
+
+.message-box {
+    background-color: #fef3c7; /* Latar belakang kuning muda */
+    border: 1px solid #fcd34d; /* Border kuning */
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 16px;
+    color: #b45309; /* Warna teks cokelat-oranye */
+    font-size: 14px;
+    text-align: left;
+    display: none; /* Sembunyikan secara default */
+}
+.message-box.show {
+    display: block; /* Tampilkan saat ada pesan */
+}
+
+.note {
+    font-size: 0.875rem; /* Ukuran font kecil */
+    color: #dc2626; /* Warna merah */
+    margin-top: 4px;
+    text-align: left;
+}
+
+.keterangan {
+    margin-top: 24px;
+    font-size: 0.95rem;
+    color: #374151;
+    text-align: left;
+    line-height: 1.5;
+}
+.keterangan strong {
+    color: #1f2937;
+}
+
+h1 {
+    color: #1f2937; /* Warna judul abu-abu gelap */
+    margin-bottom: 24px;
+    font-size: 2.25rem; /* Ukuran font H1 */
+    font-weight: 800; /* Ekstra tebal */
+}
